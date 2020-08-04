@@ -1,9 +1,15 @@
+// var APIKey = "0df21c98a0faf830fca56b4a59a1c375"
+// var cityState = ""
+
+// var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" +
+// cityState + "&appid=" + APIKey;
+
 $(document).ready(function() {
   $("#search-button").on("click", function() {
     var searchValue = $("#search-value").val();
 
     // clear input box
-
+    $("#search-value").val("");
     searchWeather(searchValue);
   });
 
